@@ -1,14 +1,20 @@
 * {
   margin: 0;
   padding: 0;
-
   box-sizing: border-box;
   font-family: "Sarala", sans-serif;
 }
-body{
-    width: 100vw;
-    overflow-x: hidden;
+body {
+  width: 100vw;
+  overflow-x: hidden;
 }
+.rightVector{
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
 #container {
   height: 3600px;
   display: flex;
@@ -16,11 +22,10 @@ body{
   row-gap: 40px;
 }
 .logo {
-  margin-left: 13vw;
+  margin-left: 10px;
 }
 
 #homeSection {
-
   margin-top: -40px;
   width: 100vw;
   height: 100%;
@@ -28,6 +33,13 @@ body{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  
+}
+#homeSection img {
+  margin-left: 50px;
+  margin-top: -100px;
+  padding: 40px;
+  margin-bottom: 100px;
 }
 
 #homeSection .content {
@@ -36,10 +48,7 @@ body{
   gap: 31px;
 }
 
-#homeSection img {
-  transform: rotate(90deg);
-  margin: auto;
-}
+
 
 #homeSection h1 {
   width: 333px;
@@ -98,6 +107,12 @@ body{
 }
 
 #aboutSection {
+  background-image: url("src/Intersect.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
+  
+  padding-bottom: 10px;
   width: 100vw;
   height: 768px;
   display: flex;
@@ -107,10 +122,11 @@ body{
 
 #aboutSection .info {
   width: 333px;
-  height: 434.897px;
   display: flex;
   flex-direction: column;
   gap: 13px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
   flex-shrink: 0;
   border-radius: 16px;
   background: #fff;
@@ -254,7 +270,6 @@ body{
 #contactSection {
   height: 680px;
   flex-shrink: 0;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -262,8 +277,8 @@ body{
   flex-direction: column;
 }
 #contactSection .contactBg {
-  width: 333px;
-  margin: auto;
+  width: 100vw;
+  margin-inline: -34px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -335,9 +350,9 @@ body{
   width: 100vw;
 }
 .footerElements {
-  width: 333px;
+  width: 333vw - 0.5vw;
   height: 100px;
-  margin: auto;
+  margin-inline: 34px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -364,7 +379,7 @@ body{
   width: 100vw;
   position: sticky;
   color: transparent;
-  bottom: 0;
+  left: 0;
   border-radius: 40px 40px 0px 0px;
   background: #09f;
   justify-content: center;
@@ -375,7 +390,7 @@ body{
 
 .menu .menuItems {
   display: inline-flex;
-  padding: 10px 45px;
+  padding-top: 10px;
   align-items: flex-start;
   gap: 41px;
 }

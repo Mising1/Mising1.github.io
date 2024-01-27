@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="103.99927mm"
+   height="75.344795mm"
+   viewBox="0 0 103.99927 75.344795"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   sodipodi:docname="Intersect.svg"
+   inkscape:export-filename="Intersect.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1"
+     inkscape:cx="429.5"
+     inkscape:cy="381.5"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" /><defs
+     id="defs1" /><g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-53.098417,-55.75976)"><g
+       style="fill:none"
+       id="g1"
+       transform="matrix(0.26458333,0,0,0.09918098,53.11644,90.330662)"><path
+         fill-rule="evenodd"
+         clip-rule="evenodd"
+         d="M 0,356.402 V -1.2207e-4 H 107.5 265.75 393 V 411.106 C 365.511,393.426 351.211,384.163 341.246,377.709 324.756,367.028 320.142,364.04 287.29,343.323 234.54,303.056 157.103,314.984 49.9146,345.82 28.6158,351.947 12.8226,355.494 0,356.402 Z"
+         fill="#0099ff"
+         id="path1" /></g><g
+       style="fill:none"
+       id="g2"
+       transform="matrix(0.26458333,0,0,0.12796211,53.098417,55.759757)"><path
+         fill-rule="evenodd"
+         clip-rule="evenodd"
+         d="M 0,68.5205 V 275 H 21.1667 127 254 381 393 V 68.5295 c -3.819,-0.118 -7.919,-0.2557 -12.353,-0.4053 -3.591,-0.7651 -7.06,-1.4885 -10.431,-2.1913 C 334.354,58.4543 309.649,53.3025 267.406,25.0782 217.423,-8.31649 149.401,-4.43157 100.189,13.937 76.8641,24.5793 58.4564,35.4145 42.3963,44.8678 34.8949,49.2833 27.9056,53.3974 21.1667,57.0495 Z"
+         fill="#0099ff"
+         id="path1-8" /></g></g></svg>
