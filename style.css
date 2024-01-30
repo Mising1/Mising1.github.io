@@ -1,3 +1,405 @@
+@media (min-width: 600px) {
+  
+  *{
+    margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+  overflow-x: hidden;
+}
+.rightVector{
+  position: absolute;
+  width: 400px;
+  height: 500px;
+  right: 0;
+  background-image: url(src/rightVectorDesk.svg);
+  background-position:top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+  top: -20px;
+  z-index: -1;
+}
+
+#container{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+#homeSection{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+#homeSection button {
+  width: 140px;
+  height: 45px;
+  color: #fff;
+  font-family: Sarala;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  border-radius: 16px;
+  background: #09f;
+  border: 2px solid #09f;
+}
+#homeSection h1 {
+  width: 333px;
+  height: 226px;
+  flex-shrink: 0;
+  color: #373737;
+  font-family: Sarala;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+}
+
+#homeSection p {
+  width: 333px;
+  height: 110px;
+  flex-shrink: 0;
+  color: #373737;
+  font-family: Sarala;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+#homeSection .buttons {
+  display: flex;
+  align-items: flex-start;
+  gap: 53px;
+}
+
+
+
+#homeSection .explore {
+  border-radius: 16px;
+  border: 2px solid #09f;
+  background: #fff;
+  color: #09f;
+  font-family: Sarala;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+#homeSection .content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 31px;
+}
+
+#homeSection img{
+  width: 40%;
+  height: 10%;
+  
+}
+#aboutSection {
+  background-image: url(src/Intersect.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 10px;
+  width: 100vw;
+  justify-content: center;
+  height: 768px;
+  display: flex;
+  align-items: center;
+
+}
+
+
+#aboutSection .info {
+  width: 333px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 4px 11.5px 5px #00000047;
+}
+
+#aboutSection img {
+  width: 333px;
+  height: 434.897px;
+  border-radius: 16px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+#aboutSection .info h1 {
+  margin: 36px 0 0 2rem;
+  color: #000;
+  font-family: Sarala;
+  font-size: 24px;
+  width: 263px;
+  height: 39px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.68px;
+}
+
+#aboutSection .info p {
+  margin: 0 0 0 2rem;
+  width: 263px;
+  height: 81px;
+  color: #373737;
+  font-family: Sarala;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 113.636%;
+  letter-spacing: 0.45px;
+}
+
+#aboutSection .info ul {
+  margin: 0 0 0 3rem;
+  display: flex;
+  width: 263px;
+  height: 215px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Sarala;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 133%;
+  letter-spacing: 0.8px;
+}
+
+#faqSection {
+  height: 768px;
+  flex-shrink: 0;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#faqSection .faqHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+#faqSection .faqHeader h1 {
+  color: #000;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 92.623px;
+  text-align: center;
+  font-family: Sarala;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.72px;
+}
+
+#faqSection .faqHeader p {
+  display: flex;
+  width: 500px;
+  height: 67.078px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #000;
+  text-align: center;
+  font-family: Sarala;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#faqSection .faqItems {
+  display: flex;
+  order: 2;
+  height: 566.276px;
+  padding: 8px 0 33px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 38px;
+  flex-shrink: 0;
+}
+
+#faqSection .faqItems > button {
+  width: 300px;
+  
+  flex: 33%;
+  height: 60px;
+  border-radius: 32px;
+  background: #09f;
+  border: 1px solid #09f;
+  color: #fff;
+  font-family: Sarala;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  display: flex;
+  padding: 15px 23px 15px 25px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+#faqSection .faqItems button svg {
+  min-width: 30px;
+}
+
+#contactSection {
+  height: 680px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  flex-direction: column;
+}
+
+#contactSection .contactBg {
+  width: 100vw;
+  margin-inline: -34px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: #f1f1f1;
+}
+
+#contactSection .contactHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.contactHeader h1 {
+  color: #000;
+  font-family: Sarala;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.contactHeader p {
+  color: #373737;
+  text-align: center;
+  font-family: Sarala;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  width: 300px;
+  height: 120px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+#contactSection form {
+  display: flex;
+  flex-direction: column;
+  margin-inline: 34px;
+  gap: 27px;
+}
+
+#contactSection form input:not(:last-child) {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #000;
+  background-color: #0000;
+  flex-shrink: 0;
+}
+
+#contactSection form textarea {
+  border-bottom: 1px solid #000;
+  background-color: #0000;
+  resize: none;
+  outline: none;
+  padding: 10px;
+}
+
+.footer {
+  background: #09f;
+  height: 300px;
+  padding-bottom: 80px;
+  width: 100vw;
+}
+
+.footerElements {
+  width: 333vw - 0.5vw;
+  height: 100px;
+  margin-inline: 34px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerElements .socials {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  color: #fff;
+  font-family: Sarala;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+.menu{
+  display: none;
+}
+
+
+.footer{
+  height: 100px;
+}
+
+
+
+
+
+
+}
 @media (max-width: 600px) {
   * {
     margin: 0;
@@ -9,7 +411,7 @@
     width: 100vw;
     overflow-x: hidden;
   }
-
+  
   .rightVector {
     position: absolute;
     right: 0;
@@ -45,67 +447,6 @@
     margin-bottom: 100px;
   }
 
-  #homeSection .content {
-    display: flex;
-    flex-direction: column;
-    gap: 31px;
-  }
-
-  #homeSection h1 {
-    width: 333px;
-    height: 226px;
-    flex-shrink: 0;
-    color: #373737;
-    font-family: Sarala;
-    font-size: 2.25rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 56px;
-  }
-
-  #homeSection p {
-    width: 333px;
-    height: 110px;
-    flex-shrink: 0;
-    color: #373737;
-    font-family: Sarala;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
-  }
-
-  #homeSection .buttons {
-    display: flex;
-    align-items: flex-start;
-    gap: 53px;
-  }
-
-  #homeSection button {
-    width: 140px;
-    height: 45px;
-    color: #fff;
-    font-family: Sarala;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px;
-    border-radius: 16px;
-    background: #09f;
-    border: 2px solid #09f;
-  }
-
-  #homeSection .explore {
-    border-radius: 16px;
-    border: 2px solid #09f;
-    background: #fff;
-    color: #09f;
-    font-family: Sarala;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px;
-  }
 
   #aboutSection {
     background-image: url(src/Intersect.svg);
@@ -185,6 +526,69 @@
     line-height: 133%;
     letter-spacing: 0.8px;
   }
+  #homeSection button {
+    width: 140px;
+    height: 45px;
+    color: #fff;
+    font-family: Sarala;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    border-radius: 16px;
+    background: #09f;
+    border: 2px solid #09f;
+  }
+  #homeSection h1 {
+    width: 333px;
+    height: 226px;
+    flex-shrink: 0;
+    color: #373737;
+    font-family: Sarala;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px;
+  }
+  
+  #homeSection p {
+    width: 333px;
+    height: 110px;
+    flex-shrink: 0;
+    color: #373737;
+    font-family: Sarala;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  
+  #homeSection .buttons {
+    display: flex;
+    align-items: flex-start;
+    gap: 53px;
+  }
+  
+  
+  
+  #homeSection .explore {
+    border-radius: 16px;
+    border: 2px solid #09f;
+    background: #fff;
+    color: #09f;
+    font-family: Sarala;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+  }
+  
+  #homeSection .content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 31px;
+  }
+  
 
   #faqSection {
     height: 768px;
