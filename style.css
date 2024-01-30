@@ -1,818 +1,95 @@
 @media (min-width: 600px) {
-  
-  *{
-    margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body{
-  width: 100vw;
-  overflow-x: hidden;
-}
-.rightVector{
-  position: absolute;
-  width: 400px;
-  height: 500px;
-  right: 0;
-  background-image: url(src/rightVectorDesk.svg);
-  background-position:top;
-  background-repeat: no-repeat;
-  background-size: contain;
-  
-  top: -20px;
-  z-index: -1;
-}
-
-#container{
-  width: 100%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-}
-
-#homeSection{
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  align-items: center;
-}
-
-#homeSection button {
-  width: 140px;
-  height: 45px;
-  color: #fff;
-  font-family: Sarala;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 18px;
-  border-radius: 16px;
-  background: #09f;
-  border: 2px solid #09f;
-}
-#homeSection h1 {
-  width: 333px;
-  height: 226px;
-  flex-shrink: 0;
-  color: #373737;
-  font-family: Sarala;
-  font-size: 2.25rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 56px;
-}
-
-#homeSection p {
-  width: 333px;
-  height: 110px;
-  flex-shrink: 0;
-  color: #373737;
-  font-family: Sarala;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 30px;
-}
-
-#homeSection .buttons {
-  display: flex;
-  align-items: flex-start;
-  gap: 53px;
-}
-
-
-
-#homeSection .explore {
-  border-radius: 16px;
-  border: 2px solid #09f;
-  background: #fff;
-  color: #09f;
-  font-family: Sarala;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 18px;
-}
-
-#homeSection .content {
-  display: flex;
-  flex-direction: column;
-  row-gap: 31px;
-}
-
-#homeSection img{
-  width: 40%;
-  height: 10%;
-  
-}
-#aboutSection {
-  background-image: url(src/Intersect.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding-bottom: 10px;
-  width: 100vw;
-  justify-content: center;
-  height: 768px;
-  display: flex;
-  align-items: center;
-
-}
-
-
-#aboutSection .info {
-  width: 333px;
-  display: flex;
-  flex-direction: column;
-  gap: 13px;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  flex-shrink: 0;
-  border-radius: 16px;
-  background: #fff;
-  box-shadow: 0 4px 11.5px 5px #00000047;
-}
-
-#aboutSection img {
-  width: 333px;
-  height: 434.897px;
-  border-radius: 16px;
-  object-fit: cover;
-  flex-shrink: 0;
-}
-
-#aboutSection .info h1 {
-  margin: 36px 0 0 2rem;
-  color: #000;
-  font-family: Sarala;
-  font-size: 24px;
-  width: 263px;
-  height: 39px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1.68px;
-}
-
-#aboutSection .info p {
-  margin: 0 0 0 2rem;
-  width: 263px;
-  height: 81px;
-  color: #373737;
-  font-family: Sarala;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 113.636%;
-  letter-spacing: 0.45px;
-}
-
-#aboutSection .info ul {
-  margin: 0 0 0 3rem;
-  display: flex;
-  width: 263px;
-  height: 215px;
-  flex-direction: column;
-  justify-content: center;
-  flex-shrink: 0;
-  color: #000;
-  font-family: Sarala;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 133%;
-  letter-spacing: 0.8px;
-}
-
-#faqSection {
-  height: 768px;
-  flex-shrink: 0;
-  display: flex;
-  width: 100vw;
-  justify-content: center;
-  flex-direction: column;
-}
-
-#faqSection .faqHeader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 16px;
-}
-
-#faqSection .faqHeader h1 {
-  color: #000;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 500px;
-  height: 92.623px;
-  text-align: center;
-  font-family: Sarala;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.72px;
-}
-
-#faqSection .faqHeader p {
-  display: flex;
-  width: 500px;
-  height: 67.078px;
-  flex-direction: column;
-  justify-content: center;
-  flex-shrink: 0;
-  color: #000;
-  text-align: center;
-  font-family: Sarala;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-#faqSection .faqItems {
-  display: flex;
-  order: 2;
-  height: 566.276px;
-  padding: 8px 0 33px;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 38px;
-  flex-shrink: 0;
-}
-
-#faqSection .faqItems > button {
-  width: 300px;
-  
-  flex: 33%;
-  height: 60px;
-  border-radius: 32px;
-  background: #09f;
-  border: 1px solid #09f;
-  color: #fff;
-  font-family: Sarala;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  display: flex;
-  padding: 15px 23px 15px 25px;
-  justify-content: space-between;
-  align-items: center;
-  gap: 12px;
-}
-
-#faqSection .faqItems button svg {
-  min-width: 30px;
-}
-
-#contactSection {
-  height: 680px;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-  flex-direction: column;
-}
-
-#contactSection .contactBg {
-  width: 100vw;
-  margin-inline: -34px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  background: #f1f1f1;
-}
-
-#contactSection .contactHeader {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  flex-shrink: 0;
-}
-
-.contactHeader h1 {
-  color: #000;
-  font-family: Sarala;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.contactHeader p {
-  color: #373737;
-  text-align: center;
-  font-family: Sarala;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  display: flex;
-  width: 300px;
-  height: 120px;
-  flex-direction: column;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-#contactSection form {
-  display: flex;
-  flex-direction: column;
-  margin-inline: 34px;
-  gap: 27px;
-}
-
-#contactSection form input:not(:last-child) {
-  width: 100%;
-  height: 40px;
-  border: none;
-  outline: none;
-  border-bottom: 1px solid #000;
-  background-color: #0000;
-  flex-shrink: 0;
-}
-
-#contactSection form textarea {
-  border-bottom: 1px solid #000;
-  background-color: #0000;
-  resize: none;
-  outline: none;
-  padding: 10px;
-}
-
-.footer {
-  background: #09f;
-  height: 300px;
-  padding-bottom: 80px;
-  width: 100vw;
-}
-
-.footerElements {
-  width: 333vw - 0.5vw;
-  height: 100px;
-  margin-inline: 34px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footerElements .socials {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer p {
-  color: #fff;
-  font-family: Sarala;
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-
-.menu{
-  display: none;
-}
-
-
-.footer{
-  height: 100px;
-}
-
-
-
-
-
-
-}
-@media (max-width: 600px) {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  *{margin:0;padding:0;box-sizing:border-box}
+  .logo{margin-left:15rem}
+  body{width:100vw;overflow-x:hidden}
+  .rightVector{position:absolute;width:53.3125rem;height:48.0625rem;right:0;background-image:url(src/rightVectorDesk.svg);background-position:top;background-repeat:no-repeat;background-size:contain;top:0;z-index:-1}
+  #container{width:100%;margin:auto;display:flex;flex-direction:column;gap:7rem}
+  #homeSection{display:flex;flex-direction:row-reverse;justify-content:center;align-items:flex-start;column-gap:20%}
+  #homeSection img{transform:translateX(50px)}
+  #homeSection button{display:flex;padding:1.5rem 3rem;transition:all .4s ease;border-radius:1rem;border:2px solid #09f;background:#09f;color:#fff;font-family:Sarala;font-size:1.5rem;font-style:normal;font-weight:400;line-height:1.125rem;cursor:pointer}
+  #homeSection button:hover{background:#fff;color:#09f}
+  #homeSection .explore:hover{background:#09f;color:#fff}
+  #homeSection h1{width:34.5rem;height:11.625rem;color:#373737;font-family:Sarala;font-size:3rem;font-style:normal;font-weight:700;line-height:4rem}
+  #homeSection p{width:34.5rem;height:7.625rem;flex-shrink:0;color:#373737;font-family:Sarala;font-size:1.25rem;font-style:normal;font-weight:400;line-height:1.875rem}
+  #homeSection .buttons{display:flex;align-items:flex-start;gap:53px}
+  #homeSection .explore{display:flex;padding:1.5rem 3rem;justify-content:center;align-items:center;gap:.625rem;border-radius:1rem;border:2px solid #09f;color:#09f;background-color:#fff;font-family:Sarala;font-size:1.5rem;font-style:normal;font-weight:400;line-height:1.125rem}
+  #homeSection .content{display:flex;flex-direction:column;row-gap:31px}
+  #homeSection img{width:20rem;height:20rem}
+  #aboutSection{background-image:url(src/aboutVector.svg);background-size:cover;background-repeat:no-repeat;background-position:center;padding-bottom:10px;width:100vw;height:850px;display:flex;align-items:center;justify-content:center}
+  #aboutSection .info{width:550px;height:558px;display:flex;flex-direction:column;align-items:center;gap:13px;padding-bottom:10px;justify-content:center;flex-shrink:0;border-radius:16px;background:#fff;box-shadow:0 4px 11.5px 5px #00000047}
+  #aboutSection img{width:35rem;height:35rem;object-fit:cover;flex-shrink:0}
+  #aboutSection .info h1{color:#000;display:flex;width:29.625rem;height:4.75rem;font-family:Sarala;font-size:2.5rem;font-style:normal;font-weight:700;line-height:normal;letter-spacing:.175rem}
+  #aboutSection .info p{color:#373737;width:29.61931rem;height:6.1765rem;font-family:Sarala;font-size:1.375rem;font-style:normal;font-weight:400;line-height:113.636%;letter-spacing:.04125rem}
+  #aboutSection .info ul{color:#000;width:29.61931rem;height:14.88969rem;margin-left:3rem;font-family:Sarala;font-size:1.5rem;font-style:normal;font-weight:400;line-height:133%;letter-spacing:.075rem}
+  #faqSection{width:100vw;flex-shrink:0;display:flex;align-items:center;justify-content:center;flex-direction:column}
+  #faqSection .faqHeader{display:flex;gap:3rem;justify-content:center;align-items:center;flex-direction:column;margin-bottom:16px}
+  #faqSection .faqHeader h1{color:#000;width:38.4375rem;height:2.5rem;text-align:center;font-family:Sarala;font-size:2.5rem;font-style:normal;font-weight:700;line-height:normal;letter-spacing:.2rem}
+  #faqSection .faqHeader p{width:46.25rem;height:4.86313rem;color:#000;text-align:center;font-family:Sarala;font-size:1.5rem;font-style:normal;font-weight:400;line-height:normal}
+  #faqSection .faqItems{display:flex;width:78.125rem;height:35.625rem;margin-top:4rem;padding:8px 0 33px;flex-wrap:wrap;justify-content:space-around;gap:1.75rem;flex-shrink:0}
+  #faqSection .faqItems > button{width:25rem;height:60px;border-radius:32px;background:#09f;border:1px solid #09f;color:#fff;font-family:Sarala;font-size:15px;font-style:normal;font-weight:400;line-height:20px;display:flex;padding:15px 23px 15px 25px;justify-content:space-between;align-items:center;gap:12px}
+  #faqSection .faqItems button svg{min-width:30px}
+  #contactSection{height:680px;flex-shrink:0;display:flex;justify-content:center;width:100vw}
+  #contactSection .contactBg{display:flex;flex-direction:column;flex-wrap:wrap;justify-content:center;background:#f1f1f1}
+  #contactSection .contactHeader{display:flex;flex-direction:column;justify-content:center;margin-left:6rem;gap:16px;flex-shrink:0}
+  .contactHeader h1{color:#000;font-family:Sarala;font-size:2.5rem;font-style:normal;font-weight:400;line-height:normal}
+  .contactHeader p{color:#373737;width:31.1875rem;font-family:Sarala;font-size:1.5rem;font-style:normal;font-weight:400;line-height:normal}
+  #contactSection form{display:flex;flex-direction:column;gap:27px}
+  #contactSection form input{width:25.625rem;margin-left:6rem;height:3.75rem;border:none;outline:none;border-bottom:1px solid #000;background-color:#0000;flex-shrink:0}
+  #contactSection form input[type="submit"]{width:15rem;height:2.75rem;font-size:1.5rem;border-radius:2rem;background-color:#09f;color:#fff;border:none}
+  .contactImage{width:35.625rem;height:23.75288rem}
+  #contactSection form input:focus{border-bottom:2px solid #09f}
+  #contactSection form textarea{border-bottom:1px solid #000;width:25.625rem;background-color:#0000;resize:none;margin-left:6rem;outline:none;padding:10px}
+  #contactSection form textarea:focus{border:2px solid #09f}
+  #contactSection .contactBg{width:80rem;height:50rem}
+  .footer{margin-top:50px;background:#09f;padding-bottom:80px;width:100vw}
+  .footerElements{height:100px;display:flex;justify-content:space-around;align-items:center}
+  .footerElements .socials{display:flex;gap:1rem;justify-content:center;align-items:center}
+  .footer p{color:#fff;font-family:Sarala;font-size:.9375rem;font-style:normal;font-weight:400;line-height:normal}
+  .menu{display:none}
+  .footer{height:100px}
   }
-
-  body {
-    width: 100vw;
-    overflow-x: hidden;
+  @media (max-width: 600px) {
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{width:100vw;overflow-x:hidden}
+  .rightVector{position:absolute;width:21.25rem;height:31.6875rem;right:-10px;background-image:url(src/rightVector.svg);background-position:top;background-repeat:no-repeat;background-size:contain;top:0;z-index:-1}
+  #container{height:3600px;display:flex;flex-direction:column;row-gap:40px}
+  .logo{margin-left:10px}
+  #homeSection{margin-top:-40px;width:100vw;height:100%;display:flex;justify-content:center;align-items:center;flex-direction:column}
+  #homeSection img{margin-left:50px;margin-top:-100px;padding:40px;margin-bottom:100px}
+  #aboutSection{background-image:url(src/Intersect.svg);background-size:cover;background-repeat:no-repeat;background-position:center;padding-bottom:10px;width:100vw;height:768px;display:flex;flex-direction:column;align-items:center}
+  #aboutSection .info{width:333px;display:flex;flex-direction:column;gap:13px;padding-bottom:10px;margin-bottom:10px;flex-shrink:0;border-radius:16px;background:#fff;box-shadow:0 4px 11.5px 5px #00000047}
+  #aboutSection img{width:333px;height:434.897px;border-radius:16px;object-fit:cover;flex-shrink:0}
+  #aboutSection .info h1{margin:36px 0 0 2rem;color:#000;font-family:Sarala;font-size:24px;width:263px;height:39px;font-style:normal;font-weight:700;line-height:normal;letter-spacing:1.68px}
+  .contactImage{display:none}
+  #aboutSection .info p{margin:0 0 0 2rem;width:263px;height:81px;width:263px;height:81px;color:#373737;font-family:Sarala;font-size:15px;font-style:normal;font-weight:400;line-height:113.636%;letter-spacing:.45px}
+  #aboutSection .info ul{margin:0 0 0 3rem;display:flex;width:263px;height:215px;flex-direction:column;justify-content:center;flex-shrink:0;color:#000;font-family:Sarala;font-size:16px;font-style:normal;font-weight:400;line-height:133%;letter-spacing:.8px}
+  #homeSection button{width:140px;height:45px;color:#fff;font-family:Sarala;font-size:15px;font-style:normal;font-weight:400;line-height:18px;border-radius:16px;background:#09f;border:2px solid #09f}
+  #homeSection h1{width:333px;height:226px;flex-shrink:0;color:#373737;font-family:Sarala;font-size:2.25rem;font-style:normal;font-weight:700;line-height:56px}
+  #homeSection p{width:333px;height:110px;flex-shrink:0;color:#373737;font-family:Sarala;font-size:14px;font-style:normal;font-weight:400;line-height:30px}
+  #homeSection .buttons{display:flex;align-items:flex-start;gap:53px}
+  #homeSection .explore{border-radius:16px;border:2px solid #09f;background:#fff;color:#09f;font-family:Sarala;font-size:15px;font-style:normal;font-weight:400;line-height:18px}
+  #homeSection .content{display:flex;flex-direction:column;row-gap:31px}
+  #faqSection{height:768px;margin-top:4rem;flex-shrink:0;display:flex;width:100vw;justify-content:center;flex-direction:column}
+  #faqSection .faqHeader{display:flex;justify-content:center;align-items:center;flex-direction:column;margin-bottom:16px}
+  #faqSection .faqHeader h1{color:#000;text-align:center;display:flex;align-items:center;justify-content:center;width:333px;height:92.623px;text-align:center;font-family:Sarala;font-size:24px;font-style:normal;font-weight:700;line-height:normal;letter-spacing:.72px}
+  #faqSection .faqHeader p{display:flex;width:333px;height:67.078px;flex-direction:column;justify-content:center;flex-shrink:0;color:#000;text-align:center;font-family:Sarala;font-size:14px;font-style:normal;font-weight:400;line-height:normal}
+  #faqSection .faqItems{display:inline-flex;height:566.276px;padding:8px 0 33px;flex-direction:column;align-items:center;gap:38px;flex-shrink:0}
+  #faqSection .faqItems button{width:300px;height:60px;border-radius:32px;background:#09f;border:1px solid #09f;color:#fff;font-family:Sarala;font-size:15px;font-style:normal;font-weight:400;line-height:20px;display:flex;padding:15px 23px 15px 25px;justify-content:space-between;align-items:center;gap:12px}
+  #faqSection .faqItems button svg{min-width:30px}
+  #contactSection{height:680px;flex-shrink:0;display:flex;align-items:center;justify-content:center;width:100vw;flex-direction:column}
+  #contactSection .contactBg{width:100vw;margin-inline:-34px;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;background:#f1f1f1}
+  #contactSection .contactHeader{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:16px;flex-shrink:0}
+  .contactHeader h1{color:#000;font-family:Sarala;font-size:24px;font-style:normal;font-weight:400;line-height:normal}
+  .contactHeader p{color:#373737;text-align:center;font-family:Sarala;font-size:15px;font-style:normal;font-weight:400;line-height:normal;display:flex;width:300px;height:120px;flex-direction:column;justify-content:center;flex-shrink:0}
+  #contactSection form{display:flex;flex-direction:column;margin-inline:34px;gap:27px}
+  #contactSection form input:not(:last-child){width:100%;height:40px;border:none;outline:none;border-bottom:1px solid #000;background-color:#0000;flex-shrink:0}
+  #contactSection form textarea{border-bottom:1px solid #000;background-color:#0000;resize:none;outline:none;padding:10px}
+  .footer{background:#09f;height:300px;padding-bottom:80px;width:100vw}
+  .footerElements{width:333vw - .5vw;height:100px;margin-inline:34px;display:flex;justify-content:space-between;align-items:center}
+  .footerElements .socials{display:flex;gap:10px;justify-content:center;align-items:center}
+  .footer p{color:#fff;font-family:Sarala;font-size:10px;font-style:normal;font-weight:400;line-height:normal}
+  .menu{background-color:#09f;display:flex;width:100vw;position:sticky;color:transparent;left:0;border-radius:40px 40px 0 0;background:#09f;justify-content:center;align-items:center;position:fixed;bottom:0}
+  .menu .menuItems{display:inline-flex;padding-top:10px;align-items:flex-start;gap:41px}
+  .menu .menuItems a{display:flex;flex-direction:column;justify-content:center;align-items:center;color:#fff;text-decoration:none}
   }
   
-  .rightVector {
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: -1;
-  }
-
-  #container {
-    height: 3600px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 40px;
-  }
-
-  .logo {
-    margin-left: 10px;
-  }
-
-  #homeSection {
-    margin-top: -40px;
-    width: 100vw;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  #homeSection img {
-    margin-left: 50px;
-    margin-top: -100px;
-    padding: 40px;
-    margin-bottom: 100px;
-  }
-
-
-  #aboutSection {
-    background-image: url(src/Intersect.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding-bottom: 10px;
-    width: 100vw;
-    height: 768px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #aboutSection .info {
-    width: 333px;
-    display: flex;
-    flex-direction: column;
-    gap: 13px;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    flex-shrink: 0;
-    border-radius: 16px;
-    background: #fff;
-    box-shadow: 0 4px 11.5px 5px #00000047;
-  }
-
-  #aboutSection img {
-    width: 333px;
-    height: 434.897px;
-    border-radius: 16px;
-    object-fit: cover;
-    flex-shrink: 0;
-  }
-
-  #aboutSection .info h1 {
-    margin: 36px 0 0 2rem;
-    color: #000;
-    font-family: Sarala;
-    font-size: 24px;
-    width: 263px;
-    height: 39px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1.68px;
-  }
-
-  #aboutSection .info p {
-    margin: 0 0 0 2rem;
-    width: 263px;
-    height: 81px;
-    width: 263px;
-    height: 81px;
-    color: #373737;
-    font-family: Sarala;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 113.636%;
-    letter-spacing: 0.45px;
-  }
-
-  #aboutSection .info ul {
-    margin: 0 0 0 3rem;
-    display: flex;
-    width: 263px;
-    height: 215px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    color: #000;
-    font-family: Sarala;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 133%;
-    letter-spacing: 0.8px;
-  }
-  #homeSection button {
-    width: 140px;
-    height: 45px;
-    color: #fff;
-    font-family: Sarala;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px;
-    border-radius: 16px;
-    background: #09f;
-    border: 2px solid #09f;
-  }
-  #homeSection h1 {
-    width: 333px;
-    height: 226px;
-    flex-shrink: 0;
-    color: #373737;
-    font-family: Sarala;
-    font-size: 2.25rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 56px;
-  }
-  
-  #homeSection p {
-    width: 333px;
-    height: 110px;
-    flex-shrink: 0;
-    color: #373737;
-    font-family: Sarala;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
-  }
-  
-  #homeSection .buttons {
-    display: flex;
-    align-items: flex-start;
-    gap: 53px;
-  }
-  
-  
-  
-  #homeSection .explore {
-    border-radius: 16px;
-    border: 2px solid #09f;
-    background: #fff;
-    color: #09f;
-    font-family: Sarala;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px;
-  }
-  
-  #homeSection .content {
-    display: flex;
-    flex-direction: column;
-    row-gap: 31px;
-  }
-  
-
-  #faqSection {
-    height: 768px;
-    flex-shrink: 0;
-    display: flex;
-    width: 100vw;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  #faqSection .faqHeader {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 16px;
-  }
-
-  #faqSection .faqHeader h1 {
-    color: #000;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 333px;
-    height: 92.623px;
-    text-align: center;
-    font-family: Sarala;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.72px;
-  }
-
-  #faqSection .faqHeader p {
-    display: flex;
-    width: 333px;
-    height: 67.078px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    color: #000;
-    text-align: center;
-    font-family: Sarala;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-
-  #faqSection .faqItems {
-    display: inline-flex;
-    height: 566.276px;
-    padding: 8px 0 33px;
-    flex-direction: column;
-    align-items: center;
-    gap: 38px;
-    flex-shrink: 0;
-  }
-
-  #faqSection .faqItems button {
-    width: 300px;
-    height: 60px;
-    border-radius: 32px;
-    background: #09f;
-    border: 1px solid #09f;
-    color: #fff;
-    font-family: Sarala;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-    display: flex;
-    padding: 15px 23px 15px 25px;
-    justify-content: space-between;
-    align-items: center;
-    gap: 12px;
-  }
-
-  #faqSection .faqItems button svg {
-    min-width: 30px;
-  }
-
-  #contactSection {
-    height: 680px;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    flex-direction: column;
-  }
-
-  #contactSection .contactBg {
-    width: 100vw;
-    margin-inline: -34px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    background: #f1f1f1;
-  }
-
-  #contactSection .contactHeader {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    flex-shrink: 0;
-  }
-
-  .contactHeader h1 {
-    color: #000;
-    font-family: Sarala;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-
-  .contactHeader p {
-    color: #373737;
-    text-align: center;
-    font-family: Sarala;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    display: flex;
-    width: 300px;
-    height: 120px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-  }
-
-  #contactSection form {
-    display: flex;
-    flex-direction: column;
-    margin-inline: 34px;
-    gap: 27px;
-  }
-
-  #contactSection form input:not(:last-child) {
-    width: 100%;
-    height: 40px;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid #000;
-    background-color: #0000;
-    flex-shrink: 0;
-  }
-
-  #contactSection form textarea {
-    border-bottom: 1px solid #000;
-    background-color: #0000;
-    resize: none;
-    outline: none;
-    padding: 10px;
-  }
-
-  .footer {
-    background: #09f;
-    height: 300px;
-    padding-bottom: 80px;
-    width: 100vw;
-  }
-
-  .footerElements {
-    width: 333vw - 0.5vw;
-    height: 100px;
-    margin-inline: 34px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .footerElements .socials {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .footer p {
-    color: #fff;
-    font-family: Sarala;
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-
-  .menu {
-    background-color: #09f;
-    display: flex;
-    width: 100vw;
-    position: sticky;
-    color: transparent;
-    left: 0;
-    border-radius: 40px 40px 0 0;
-    background: #09f;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-  }
-
-  .menu .menuItems {
-    display: inline-flex;
-    padding-top: 10px;
-    align-items: flex-start;
-    gap: 41px;
-  }
-
-  .menu .menuItems a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    text-decoration: none;
-  }
-}
